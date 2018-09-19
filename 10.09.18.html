@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ClassWork 10.09.18 "CSS"</title>
+    <!--<style>
+      h2{
+        color:blue;
+      }
+      div{
+        width:100px;
+        height:100px;
+        background-color: yellow;
+      }
+    </style>-->
+    <!--<link rel="stylesheet" type="text/css" href="Css/MyCss.css"-->
+    <style>
+    :checked + span {
+        color: red;
+        font-weight: bold;  /* выделение жирным */
+    }
+    </style>
+  </head>
+  <body>
+    <!Стили используют селекторы и блоки объявления стилей - свойство:значение
+    Ести стили накладываются друг на друга, то приоритетный - стиль внутри атрибута.
+    Затем стиль в теге style, и последний по приоритету - стиль из внешнего файла>
+      <!--<div{
+        background-color:red;
+      } class="">
+    </div>-->
+      <!Способы использования стилей:>
+      <!1>
+      <!--<h2 style="color:blue;">Style</h2>
+      <div style="width:100px; height:100px; background-color:red;"></div>-->
+      <!2>
+      <!В head открыть тег "style" и в нем прописать значения>
+      <!--<h2>Style</h2>
+      <div></div>-->
+      <!3>
+      <!Создаем отдельный файл со значениями (MyCss.css) и подключаем его ссылкой link>
+      <h2>Селекторы CSS</h2>
+      <!--<div class="redblock"></div>
+      <div class="blueblock"></div>
+      <div class="redblock"></div>-->
+
+      <!--<div id="header">header</div>
+      <div id="content">content</div>
+      <div id="footer">footer</div>-->
+
+      <!--div{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+          }
+      .redblock{
+        background-color: red;
+      }
+      .blueblock{
+        background-color: blue;
+      }-->
+      <!--div{
+        margin: 10px;
+        border: 1px solid #222;
+          }
+      #header{
+        height: 80px;
+        background-color: #ccc;
+      }
+      #content{
+        height: 180px;
+        background-color: #eee;
+      }
+      #footer{
+        height: 100px;
+        background-color: #ccc;
+      }-->
+      <!--*{
+        margin: 0px;
+      }-->
+
+      <!--Группировка селекторов
+      <style>
+      h1, h2, h3, h4, .classH5, #idH6
+      {
+        color: red;
+      }
+      </style>-->
+
+      <!--<h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5 class="classH5">h5</h5>
+      <h6 id="idH6">h6</h6>-->
+
+      <!у h2 потомок div, у div потомок p, у p родитель div>
+      <!--<h2>Заголовок</h2>
+      <div>
+        <p>Текст</p>
+      </div>-->
+
+      <!--<style>
+      #main div p
+      {
+        font-size: 20px;
+      }
+      #footer p
+      {
+        font-size: 12px;
+      }
+    </style>
+      <div id="main">
+        <p>Первый параграф</p>
+        <p>Второй параграф</p>
+        <div>
+          <p>Третий параграф</p>
+        </div>
+			</div>
+      <div id="footer">
+			  <p>Текст footera</p>
+			</div>-->
+
+      <!Селекторы потомков>
+      <!--<style>
+        li .redline
+        {
+          color: red;
+        }
+      </style>
+    <ul>
+      <li>Samsung:<a class="redline">S9</a></li>
+      <li>Apple:<a>X</a></li>
+      <li>Lg:<a class="redline">G8</a></li>
+      <li>Microsoft:<a>950</a></li>
+    </ul>-->
+
+    <!Для обращения к дочерним элементам используется знак>
+    <!--<style>
+      body > p
+      {
+        color: red;
+      }
+    </style>
+    <p>Заголовок</p>
+    <div>
+      <p>Текст</p>
+    </div>-->
+
+    <!Селекторы одного уровня. Для их ипользования для первого последующего
+    нужен знак "+", а для всех элементов одного уровня знак "~">
+    <!--<style>
+      .pClass~div
+      {
+        color: red;
+      }
+    </style>
+    <p class="pClass">Заголовок</p>
+      <div>
+        <p>Текст</p>
+      </div>
+      <div>
+        <p>Текст2</p>
+      </div>-->
+
+      <!Псевдоклассы>
+      <!--Псевдокласс link присеняется для ссылок, на которые не было переходов.
+      <style>a:link {color: blue; text-decoration: none;}</style>
+      visited - применяется к ссылкам, по которым пользователь переходил.
+      <style>a:visited {color: yellow; text-decoration: none;}</style>
+      activ - при нажатии на ссылку.
+      <style>a:activ {color: green; text-decoration: none;}</style>
+      hover - срабатывает при наведении мыши.
+      <style>input: hover {border: 1px solid red;}</style>
+      focus - выделение активного input (например).
+      not - позволяет исключить элемент из списка.
+      empty - применяется ко всем элементам, не имеющих вложенных элементов.
+      <a href="">Link</a>
+      <input/>-->
+
+      <!Псевдоклассы дочерних элементов (прописывается в теге "style")>
+      <!--:first-child - применяется к первому дочернему элементу.
+      :last-child - применяется к последнему дочернему элементу.
+      :only-child - применяется к единственному дочернему элементу, если он
+      единственный child.
+      :only-of-type - применяется к единственному дочернему элементу
+      указанного типа.
+      :nth-child(n) - предоставляет дочерний элемент под определенным номером (n)
+      :nth-child(odd) - применяется к нечетным элементам.
+      :nth-child(even) - применяется к четным элементам.
+      :nth-last-child(n) - предоставляет дочерний элемент под определенным
+      номером с конца(n).
+      :nth-of-type(n) - для добавления стиля к элементам указанного типа на
+      основе нумерации в дереве элементов.
+      :nth-last-of-type(n) - для добавления стиля к элементам указанного типа с
+      конца на основе нумерации в дереве элементов.
+
+    <style>
+        tr:nth-child(odd) { background-color: #bbb; }
+        tr:nth-child(even) { background-color: #fff; }
+    </style>
+        <h3>Смартфоны</h3>
+        <table>
+            <tr><td>Samsung</td><td>Galaxy S7 Edge</td><td>60000</td></tr>
+            <tr><td>Apple</td><td>iPhone SE</td><td>39000</td></tr>
+            <tr><td>Microsoft</td><td>Lumia 650</td><td>13500</td></tr>
+            <tr><td>Alcatel</td><td>Idol S4</td><td>30000</td></tr>
+            <tr><td>Huawei</td><td>P9</td><td>60000</td></tr>
+            <tr><td>HTC</td><td>HTC 10</td><td>50000</td></tr>
+            <tr><td>Meizu</td><td>Pro 6</td><td>40000</td></tr>
+            <tr><td>Xiaomi</td><td>Mi5</td><td>35000</td></tr>
+        </table>-->
+
+        <!Псевдоклассы для форм (прописывается в теге "style")>
+        <!--:anabled - используется для применения стиля к доступным
+        (не заблокированным) элементам форм.
+        :disabled - для применения стиля к заблокированным элементам форм.
+        :checked - применяется к элементам интерфейса, таким как переключатели
+        (checkbox) и флажки (radio), когда они находятся в положение «включено».
+        :default - применяет стиль к элементам форм, которые установлены по
+        умолчанию в группе похожих элементов.
+        :valid - Применяется к полям формы, содержимое которых проходит
+        проверку в браузере на соответствие указанному типу.
+        :invalid - Применяется к полям формы, содержимое которых не
+        соответствует указанному типу.
+        :in-range - находит элементы, значение которых соответствует указанному
+        для них диапозону ограничений.
+        :out-of-range - аходит элементы, значение которых находится вне
+        диапозона их ограничений.
+        :require - Применяет стилевые правила к тегу <input>, у которого
+        установлен атрибут required
+        :optional - Применяет стилевые правила к тегу <input>, у которого
+        не задан атрибут required.
+
+        <style>
+        :checked + span {
+            color: red;
+            font-weight: bold;  /* выделение жирным */
+        }
+        </style>
+            <h2>Выберите технологию</h2>
+            <p>
+                <input type="checkbox" checked name="html5"/><span>HTML5</span>
+            </p>
+            <p>
+                <input type="checkbox" name="dotnet"/><span>.NET</span>
+            </p>
+            <p>
+                <input type="checkbox" name="java"/><span>Java</span>
+            </p>
+
+            <h2>Укажите пол</h2>
+            <p>
+                <input type="radio" value="man" checked name="gender"/><span>мужской</span>
+            </p>
+            <p>
+                <input type="radio" value="woman" name="gender"/><span>женский</span>
+            </p>-->
+        <!Псевдоэлементы>
+        ::first-letter - определяет стиль первого символа в тексте элемента,
+        к которому добавляется.
+        ::first-line - задает стиль первой строки форматированного текста.
+
+        <style>
+            ::first-letter { color:red; font-size: 25px; }
+            ::first-line { font-size: 20px; }
+        </style>
+        <p>Но он ничего не видал. Над ним не было ничего уже, кроме неба, —
+          высокого неба, не ясного, но все-таки неизмеримо высокого, с тихо
+          ползущими по нем серыми облаками.</p>
+
+  </body>
+</html>
