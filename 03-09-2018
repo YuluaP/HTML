@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      <meta charset="utf-8" />
+    </title>
+  </head>
+  <body>
+    <!--a:link {color: #0000d0; /* Цвет ссылок */}
+    a:visited {color: #900060; /* Цвет посещенных ссылок */}-->
+
+
+    <!--Ссылка на ресурс в виде картинки
+    <a href='https://www.google.com/'>
+      <image src='http://bm.img.com.ua/nxs/img/prikol/images/large/8/0/158508_285233.jpg' alt='Cat'></a>
+-->
+
+<!--<figure> - Используется для группирования любых элементов, например, изображений и подписей к ним.
+    <figure>
+      <figcaption>page 1 Cat</figcaption>
+      <image src='http://bm.img.com.ua/nxs/img/prikol/images/large/8/0/158508_285233.jpg' alt='Cat'>
+    </figure>-->
+
+<!-- Тег <iframe> создает плавающий фрейм, который находится внутри обычного документа,
+ он позволяет загружать в область заданных размеров любые другие независимые документы.
+Тег <iframe> является контейнером, содержание которого игнорируется браузерами,
+ не поддерживающими данный тег. Для таких браузеров можно указать альтернативный текст,
+  который увидят пользователи. Он должен располагаться между элементами <iframe> и </iframe>.
+
+    <iframe src="http://www.ukr.net/" width="400" height="200">-->
+
+<!-- Тег <form> устанавливает форму на веб-странице. Форма предназначена для обмена
+   данными между пользователем и сервером.-->
+
+    <!--<form method="post" autocomplete="off" action="http://localhost:8080/login.php" enctype="multipart/form-data" (enctype="application/x-www-form-urlencoded")>
+    <!-- method - устанавливает тип передачи данных - POST или GET -->
+    <!-- autocomplete - устанавливает возможность автозаполнения -->
+    <!-- action - устанавливает адрес отправки формы -->
+    <!-- enctype - устанавливает тип передаваемых данных-->
+
+    <!--Тег <input> является одним из разносторонних элементов формы и позволяет создавать
+    разные элементы интерфейса и обеспечить взаимодействие с пользователем.
+    Главным образом <input> предназначен для создания текстовых полей,
+    различных кнопок, переключателей и флажков.-->
+
+    <!--input имеет два атрибута - name и value-->
+      <!--<input name="login" />
+      <input name="password" type="password" autocomplete="on" />
+      <input type="submit" value="Войти" />
+      <!-- input type:
+      text - текстовые формы;
+      password - для пароля (отображается звёздочками вместо символов);
+      file - поле для ввода имени файла, который пересылается на сервер;
+      image - поле с изображением. При нажатии на рисунок данные формы отправляются на сервер;
+      radio - переключатели для выбора (или или);
+      button - кнопка;
+      checkbox - флажки (возможен выбор нескольких значений);
+      submit - кнопка для отпраки данных на сервер;
+      reset - кнопка для возвращения данных формы в первоначальное значение;
+      hidden - скрытый элемент поля (напр. id);
+      color - поле для выбора цвета;
+      data - календарь;
+      datatime - указание даты и времени;
+      time - для времени.
+      email - для адресов электронной почты;
+      number - ввод чисел;
+      range - ползунок для выбора чисел в указанном диапазоне;
+      search - поле для поиска;
+      tel - для телефонных номеров;
+      url - для веб-адресов (ссылок).
+
+    </form>
+-->
+    <!--<form method="post" action="http://localhost:8080/login.php">
+      <!--<input type="submit" value="submit"
+      form="название формы, к которой относится кнопка"
+      formaction="03-09-2018.html"
+      formenctype="multipart/form-data"
+      formmethod="post" />
+      <input type="image" src="ссылка на картинку" name="submit" />
+
+      <input type="text" />
+      <!--Атрибуты input type="text"
+      dirname - отправляет направление текста текстового поля.
+      pattern - Указывает регулярное выражение, согласно которому требуется
+            вводить и проверять данные в поле формы. Если присутствует атрибут pattern,
+            то форма не будет отправляться, пока поле не будет заполнено правильно.
+      placeholder - Указывает замещающийся текст.
+      readonly - Устанавливает, что поле не может изменяться пользователем.
+      required - Обязательное для заполнения поле.
+      value - устанавливает значение по умолчанию в текстовом поле.
+    -->
+
+    <!--<input type="text" list="phonenumber" />
+    <datalist id="phonenumber">
+    <option value="123" label='123k'>
+    <option value="456">456k</option>
+    <option value="456"/>
+    </datalist>
+  -->
+
+    <!--<input type="number" step="2" min="10" max="25" name="num" value="10"/>
+    -->
+
+<!--0<input type="range" step="1" min="0" max="50" name="rang" />50
+-->
+
+  <!--<input type="checkbox" checked name="html 5" /> Html5
+  <br />
+  <input type="checkbox" name="java"/> java
+  <br />
+  <input type="checkbox" name="c++"/> c++
+    </form>
+-->
+
+    <form method="get" enctype="multipart/form-data" action="http://localhost:8080/login.php">
+      <!--<input type="radio" name="gender" value="woman" />woman
+      <input type="radio" name="gender" value="man" />man
+
+      <br />
+      <input type="radio" name="lang" value="html5" />html5
+      <input type="radio" name="lang" value="java" />java
+      <input type="radio" name="lang" value="c++" />c++
+-->
+
+<!-- Для полей name, tel, email обязательны атрибуты:
+      maxlength
+      pattern
+      placeholder
+      readonly
+      required
+      size
+      value
+  -->
+
+  <!--<p>
+    <label>Name</label>
+    <input type="text" name="userName" />
+  </p>
+  <p>
+    <label>Bir date</label>
+    <input type="date" name="date" />
+  </p>
+-->
+
+    <!--<input type="file" name="filename" />
+
+      атрибуты:
+      accept - указывает форматы передаваемых данных;
+      multiple - указывает количество передаваемых файлов одновременно;
+      required - обязательное наличие файла (картинки).
+  -->
+
+<!-- Тег <select> позволяет создать элемент интерфейса в виде раскрывающегося
+ списка, а также список с одним или множественным выбором
+  <select name="nameSel">
+  <optgroup label="gr1">
+    <option value="123V">123</option>
+    <option value="456V">456</option>
+  </optgroup>
+
+  <optgroup label="gr2">
+    <option value="789V" selected>789</option>
+  </optgroup>
+  </select>
+selected - задает значение по умолчанию;
+multiple - отправка нескольких элементов в списке одновременно;
+-->
+
+<!--Элемент <fieldset> предназначен для группирования элементов формы. Такая
+ группировка облегчает работу с формами, содержащими большое число данных.
+ Например, один блок может быть предназначен для ввода текстовой информации,
+  а другой — для флажков.
+    <fieldset>
+      <legend>I am text</legend>
+      <textarea name="text" cols="30" rows="7" placeholder="enter text" maxlength="200">
+      </textarea>
+      <br />
+      <input type="text" placeholder="+1-234-567-8999" pattern="\+\d-\d{3}-\d{3}-\d{4}" name="phone" />
+    </fieldset>
+  -->
+
+      <input type="submit" />
+    </form>
+
+  </body>
+</html>
